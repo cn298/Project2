@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Index Page {% endblock %}
+{% block content %}
+<div class="container-fluid">
+	<div class="jumbotron" style="text-align: center">
+		<h1>Flask-Lingo</h1>
+		<p>Learn a New Language</p>
+		<a href={{ url_for('france') }}>
+			<button type="button" class="btn btn-success">Try it out!</button>
+
+		</a>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<a href={{ url_for('index') }}>
+				<img class="img-responsive" style="max-height: 20vh; margin: 0 auto" src="static/france.png">
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href={{ url_for('index') }}>
+				<img class="img-responsive" style="max-height: 40vh; margin: 0 auto" src="static/spain.png">
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href={{ url_for('index') }}>
+				<img class="img-responsive" style="max-height: 20vh; margin: 0 auto" src="static/germany.png">
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href={{ url_for('index') }}>
+				<img class="img-responsive" style="max-height: 20vh; margin: 0 auto" src="static/italy.png">
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}
