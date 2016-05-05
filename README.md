@@ -1,2 +1,3 @@
-# Project2
-Semester 2 project 
+# FlaskLingo
+
+A simple flask app to demonstrate get and post requests
